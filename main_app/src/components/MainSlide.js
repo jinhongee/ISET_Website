@@ -31,6 +31,7 @@ function MainSlide() {
 	let mouse = 0;
 	
 	
+	
 	window.addEventListener('scroll', (e) => {
 		if(window.scrollY > 50){
 			navBar.current.style.position = 'fixed';
