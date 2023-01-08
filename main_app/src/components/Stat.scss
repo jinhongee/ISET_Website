@@ -1,0 +1,173 @@
+.stat{
+	//position: absolute;
+	//top: 190vh;
+	height: 60vh;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	//background-color: whitesmoke;
+}
+.title3{
+	font-weight: bold;
+	font-size: 2em;
+	margin-bottom: 3vh;	
+	transform: translateY(50px) rotateX(-90deg);
+}
+.text3{
+	margin-bottom: 4vh;
+	text-align: center;
+	
+}
+.line{
+	position: absolute;
+	width: 100%;
+	border: solid #00093B; 
+}
+.textBox{
+	//position: absolute;
+	background-color: whitesmoke;
+	height: 30vh;
+	width: 18vw;
+	border: solid #00093B;
+	border-radius: 15px;
+	border-width: 4px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	padding: 1vw;
+	overflow: hidden;
+	z-index: 2;
+	&:hover > #hidden{
+	//transform: translateY(0);
+		opacity: 0.9;
+	}
+}
+.annote{
+	padding: 5px;
+	text-align: center;
+	font-weight: bold;
+	margin-bottom: 2vh;
+	//color: #00093B;
+}
+#num1, #num2, #num3{
+	font-size: 4em;
+	font-weight: bold;
+	margin-bottom: 1vh;
+}
+
+
+#hidden{
+	transition: 0.5s;
+	//transform: translateY(20px);
+	border-radius: 10px;
+	opacity: 0;
+	background-color: #00093B;
+	color: white;
+	position: absolute;
+	width: 18vw;
+	height: 30vh;
+	
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+	padding: 1vw 1vw 1vw 1vw;
+}
+.flip{
+	animation: flipping 1s forwards;
+}
+@keyframes flipping {
+	from {
+		transform: translateY(50px) rotateX(-90deg);
+	}
+	to {
+		transform: translateY(0) rotateX(0deg);
+	}
+}
+
+
+
+// vh vw로 바꾸는 것도? 도형 비율 유지.
+
+
+@media (max-width: 1000px){
+	.textBox{
+		height: 30vw;
+		width: 26vw;
+	}
+	.annote{
+		//color: #00093B;
+	}
+	#hidden{
+		height: 30.5vw;
+		width: 26vw;
+		padding: 1vw;
+		//padding: 1vw 3vw 1vw 3vw;
+	}
+}
+@media (max-width: 800px){
+	.annote{
+		font-size: 0.9em;
+	}
+	.extraExplain{
+		font-size: 0.9em;
+	}
+}
+@media (max-width: 700px) {
+	.stat{
+		height: 50vh;
+	}
+	.title3{
+		font-size: 1.5em;
+	}
+	#num1, #num2, #num3{
+		font-size: 3em;
+		font-weight: bold;
+		margin-bottom: 1vh;
+	}
+	.textBox{
+		height: 25vw;
+		width: 24vw;
+	}
+	.annote{
+		font-size: 1em;
+		//color: #00093B;
+	}
+	#hidden{
+		height: 25vw;
+		width: 22vw;
+		padding: 1vw 2vw 1vw 2vw;
+	}
+	.text3{
+		margin-top: 2vh;
+	}
+}
+@media (max-width: 500px){
+	#num1, #num2, #num3{
+		font-size: 2em;
+	}
+	.annote{
+		font-size: 0.9em;
+	}
+	.extraExplain{
+		font-size: 0.9em;
+	}
+}
+
+/*
+2009, 2010<br />2011, 2012<br />2013, 2014<br />
+						2015, 2016<br />2017, 2018<br />2019, 2022<br /><br />
+						2020 and 2021 was unavailable due to COVID-19
+*/
+
+
+
+
+
+@media (max-height: 800px) {
+	.stat{
+		height: 50vh;
+	}
+}

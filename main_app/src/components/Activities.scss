@@ -1,0 +1,280 @@
+.activities{
+	padding-bottom: 5vh !important;
+	height: 95vh;
+	//border: solid red;
+	background-color: whitesmoke;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	padding: 0 3vw 0 3vw;
+	z-index: 3;
+}
+.flexBox1{
+	width: 100%;
+	display: flex;
+	justify-content: space-evenly;
+	align-items: center;
+	margin-top: 3vh;
+	transform: translateY(100px) rotateX(-90deg);
+}
+.fb1, .fb2, .fb3, .fb4{
+	z-index: 5;
+	width: 42vw;
+	height: 35vh;
+	text-align: center;
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+	border-radius: 10px;
+	overflow: hidden;
+
+}
+.fb1{
+	background-image: url('../img/act1.png');
+	&:hover .hiddenbox1{
+		transform: translateX(0);
+		visibility: visible;
+	}
+}
+// .hideBox{
+// 	overflow: hidden;
+// 	height: 32vh;
+// }
+.hiddenbox1, .hiddenbox2, .hiddenbox3, .hiddenbox4{
+	visibility: hidden;
+	border-radius: 0 0 10px 10px;
+	transition: 0.5s;
+	color: white;
+	width: 42vw;
+	height: 32vh;
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+	z-index: 2;
+}
+.hiddenbox1{
+	transform: translateX(42vw);
+	background-image: url('../img/act5.png');
+}
+.hiddenbox2{
+	transform: translateX(-42vw);
+	background-image: url('../img/act6.png');
+}
+.hiddenbox3{
+	transform: translateX(42vw);
+	background-image: url('../img/act7.jpg');
+}
+.hiddenbox4{
+	transform: translateX(-42vw);
+	background-image: url('../img/act8.jpg');
+}
+.boxx{
+	//border-radius: 10px;
+	width: 42vw;
+	height: 32vh;
+	background-color: rgba(0,0,0,0.7);
+	font-size: 1.1em;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	//padding: 1vh 1vw 1vh 1vw;
+}
+
+
+.flip3{
+	animation: flipping3 1s forwards;
+}
+@keyframes flipping3 {
+	from {
+		transform: translateX(42vw);
+	}
+	to {
+		transform: translateX(0)
+	}
+}
+
+
+
+
+.fb2{
+	background-image: url('../img/act2.png');
+	&:hover .hiddenbox2{
+		transform: translateX(0);
+		visibility: visible;
+	}
+}
+.fb3{
+	background-image: url('../img/act3.jpg');
+	&:hover .hiddenbox3{
+		transform: translateX(0);
+		visibility: visible;
+	}
+}
+.fb4{
+	background-image: url('../img/act4.jpg');
+	&:hover .hiddenbox4{
+		transform: translateX(0);
+		visibility: visible;
+	}
+}
+.flip2{
+	animation: flipping2 1s forwards;
+}
+@keyframes flipping2 {
+	from {
+		transform: translateY(100px) rotateX(-90deg);
+	}
+	to {
+		transform: translateY(0) rotateX(0deg);
+	}
+}
+.ft1{
+	height: 2.5vh;
+	border-radius: 10px 10px 0 0;
+	background-color:  rgba(0, 0, 59, 1);
+	color: white;
+	font-size: 1.2em;
+	padding: 0.6vh 0 0.6vh 0;
+}
+
+
+@media (max-width: 900px){
+	.boxx{
+		font-size: 0.9em;
+	}
+}
+@media (max-width: 700px){
+	.boxx{
+		font-size: 0.9em;
+	}
+}
+@media (max-width: 500px) {
+	
+	.activities{
+		height: 120vh;
+	}
+	
+	.title3{
+		font-size: 1.5em;
+		margin-bottom: 0;
+		margin-top: 3vh;
+	}
+	
+	.flexBox1{
+		width: 100%;
+		display: block;
+		margin-top: 0;
+		width: 84vw;
+	}
+	
+	.fb1, .fb2, .fb3, .fb4{
+		width: 84vw;
+		height: 24vh;
+		margin-top: 3vh;
+	}
+	
+	
+	.fb2{
+		background-image: url('../img/act2.png');
+		&:hover .hiddenbox2{
+			transform: translateX(0);
+			visibility: visible;
+		}
+	}
+	.fb3{
+		background-image: url('../img/act3.jpg');
+		&:hover .hiddenbox3{
+			transform: translateX(0);
+			visibility: visible;
+		}
+	}
+	.fb4{
+		background-image: url('../img/act4.jpg');
+		&:hover .hiddenbox4{
+			transform: translateX(0);
+			visibility: visible;
+		}
+	}
+	
+	.ft1{
+		height: 2.2vh;
+		border-radius: 10px 10px 0 0;
+		background-color:  rgba(0, 0, 59, 1);
+		color: white;
+		font-size: 1em;
+		padding: 0.6vh 0 0.6vh 0;
+	}
+	
+	.hiddenbox1, .hiddenbox2, .hiddenbox3, .hiddenbox4{
+		
+		width: 84vw;
+		height: 22vh;
+		
+	}
+	
+	.hiddenbox1{
+		transform: translateX(84vw);
+		background-image: url('../img/act5.png');
+	}
+	.hiddenbox2{
+		transform: translateX(-84vw);
+		background-image: url('../img/act6.png');
+	}
+	.hiddenbox3{
+		transform: translateX(84vw);
+		background-image: url('../img/act7.jpg');
+	}
+	.hiddenbox4{
+		transform: translateX(-84vw);
+		background-image: url('../img/act8.jpg');
+	}
+	
+	.boxx{
+		//border-radius: 10px;
+		width: 84vw;
+		height: 22vh;
+		background-color: rgba(0,0,0,0.7);
+		font-size: 0.9em;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		
+		//padding: 1vh 1vw 1vh 1vw;
+	}
+}
+
+
+
+
+@media (max-height: 800px) {
+	.activities{
+		height: 135vh;
+	}
+	.ft1{
+		height: 3vh;
+	}
+}
+
+
+
+
+
+
+
+/*
+Theory
+Simulation
+Culture Trips
+Friendly Matches
+
+.ft1{
+	border-radius: 10px 10px 0 0;
+	background-color:  rgba(0, 0, 59, 1);
+	color: white;
+	font-size: 1.2em;
+	padding: 0.6vh 0 0.6vh 0;
+}
+
+
+*/
