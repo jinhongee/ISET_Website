@@ -70,7 +70,7 @@ function Stat() {
 			<div className="title3" ref={title3}>
 				A Continuous Effort.
 			</div>
-			<div className="text3" ref={text3}>
+			<div className="text3 text33" ref={text3}>
 				Numbers prove why ISETP is one of the greatest submarine 
 				education programs.<br/> Now, it's your turn.
 			</div>

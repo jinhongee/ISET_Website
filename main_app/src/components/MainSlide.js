@@ -2,6 +2,10 @@ import { useRef, useEffect } from 'react';
 import { Link} from "react-router-dom";
 import './MainSlide.scss';
 
+//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
+//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
+
+
 
 function MainSlide() {
 	const slides = [

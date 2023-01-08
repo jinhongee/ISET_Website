@@ -83,13 +83,11 @@ function Intro() {
 		}, 350);
 		
 	};
+	
 
 	window.addEventListener('scroll', () => {
-		//console.log(window.scrollY);
 		if (window.innerHeight > introTitle.current.getBoundingClientRect().top) {
 			if (!stop) {
-				//introTitle.current.style.visibility = 'visible';
-				//introTitle.current.innerText = styledText();
 				isGo = true;
 				isType = true;
 				stop = true;
@@ -98,20 +96,9 @@ function Intro() {
 			}
 		} else {
 			if (stop) {
-				//introTitle.current.innerText = '';
 				stop = false;
 				isGo = false;
 				isType = false;
-				/*
-				setTimeout(() => {
-					refList.current.forEach((el) => {
-						el.classList.remove('active');
-					});
-					typeList.current.forEach((el) => {
-						el.classList.remove('typeActive');
-					});
-				}, 0)
-				*/
 				refList.current.forEach((el) => {
 					el.classList.remove('active');
 				});
@@ -125,15 +112,20 @@ function Intro() {
 			pro.current.classList.add('flip');
 		} else {
 			pro.current.classList.remove('flip');
+			
 		}
 
 		if (window.innerHeight > explain.current.getBoundingClientRect().top) {
+			console.log('gogo');
 			explain.current.classList.add('flip');
+			
 		} else {
 			explain.current.classList.remove('flip');
 		}
 	});
 
+	
+	
 	return (
 		<div className="intro">
 			<StyledDiv>
