@@ -31,7 +31,7 @@ function Qna() {
 		}
 	});
 
-	const clickHandle = (params, e) => {
+	const clickHandle = (params, e) => { 
 		
 		tracker = !tracker;
 		if(tracker){
