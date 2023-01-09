@@ -3,8 +3,8 @@ const qnaData = [
 		0,
 		'What is the exact application process?',
 		'You can\'t just contact the ROKN that you want to apply. You must contact'+
-		'your naval organization to send a formal application letter to our Navy. Then,'+
-		'with the documents you sent us, we can decide whether you will be selected as'+
+		'your naval organization to send a formal application letter to our Navy. Then, '+
+		'with the documents you sent us, we can decide whether you will be selected as '+
 		'our next student. For more information about eligibility, read the next item.'
 	],
 	[
