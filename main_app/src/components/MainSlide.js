@@ -2,7 +2,7 @@ import { useRef, useEffect } from 'react';
 import { Link} from "react-router-dom";
 import './MainSlide.scss';
 
-//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
+//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
 //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
 
 
