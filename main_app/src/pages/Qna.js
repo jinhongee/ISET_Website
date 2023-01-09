@@ -35,7 +35,7 @@ function Qna() {
 		
 		tracker = !tracker;
 		if(tracker){
-			inputRef.current[params].style.animation = 'closing 0.5s linear';
+			inputRef.current[params].style.animation = 'closing 0.3s linear';
 		} 
 		inputRef.current[params].classList.toggle('show');
 		inputRef.current[params+qnaData.length].classList.toggle('turn');
