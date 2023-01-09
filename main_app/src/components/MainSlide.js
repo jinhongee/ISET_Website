@@ -48,18 +48,10 @@ function MainSlide() {
 			navBar.current.style.height = '10vh';
 			navBar.current.style.backgroundColor= 'rgba(0, 0, 0, 0.6)';
 		}
-		// if (window.innerHeight > pro.current.getBoundingClientRect().top) {
-		// 	pro.current.classList.add('flip');
-		// } else {
-		// 	pro.current.classList.remove('flip');
-		// }
 	});
 	
 	
 	window.addEventListener('beforeunload', (event) => {
-		// 명세에 따라 preventDefault는 호출해야하며, 기본 동작을 방지합니다.
-		
-		//console.log(window.scrollY);
 		event.preventDefault();
 		pics.current.style.transform = 'translateX(0vw)';
 		pics.current.style.transition = '0s';
@@ -71,8 +63,6 @@ function MainSlide() {
 	
 	window.addEventListener('scroll', () => {
 		initiate.current = window.scrollY;
-		//console.log(window.scrollY);
-		
 	});
 	
 	

@@ -1,6 +1,5 @@
 import React, { useRef, useEffect } from 'react';
 import styled from 'styled-components';
-//import Temp from './Temp.js'
 import './Intro.scss';
 
 function Intro() {
@@ -34,10 +33,7 @@ function Intro() {
 				console.log('gogogoo');
 				typeFunc();
 			} else {
-				//console.log('adf');
 				clearInterval(typeActive);
-				
-				//console.log('adf');
 			}
 		}, 350);
 	};

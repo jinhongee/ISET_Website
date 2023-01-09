@@ -1,6 +1,5 @@
 import React from 'react';
 import './Home.scss';
-//import { BrowserRouter } from "react-router-dom";
 import MainSlide from '../components/MainSlide';
 import Intro from '../components/Intro';
 import Stat from '../components/Stat';
@@ -14,7 +13,6 @@ function Home() {
 			<Intro />
 			<Stat />
 			<Activities />
-
 			<Contacts />
 		</div>
 	);
