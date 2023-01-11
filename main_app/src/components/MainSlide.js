@@ -4,6 +4,7 @@ import './MainSlide.scss';
 
 //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
 //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
+//Not permanent Token
 
 
 
